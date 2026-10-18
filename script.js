@@ -30,10 +30,10 @@ console.log(turma)
 
 for(let i = 0; i < turma.length; i++){
     if(regrasAprovacao(turma[i].porcentageFaltas, turma[i].boletim) === "Recuperação"){
-        console.log("O aluno", turma[i].nome, "Tirou a nota", turma[i].boletim, "e teve", turma[i].porcentageFaltas, "% de faltas", "e está de", regrasAprovacao(turma[i].porcentageFaltas, turma[i].boletim), "Motivo:", motivoFinal(turma[i].faltas, turma[i].boletim))
+        console.log("O aluno", turma[i].nome, "Tirou a nota", turma[i].boletim, "e teve", turma[i].porcentageFaltas, "% de faltas", "e está de", regrasAprovacao(turma[i].porcentageFaltas, turma[i].boletim), "Motivo:", motivoFinal(turma[i].porcentageFaltas, turma[i].boletim))
     }
     else {
-    console.log("O aluno", turma[i].nome, "Tirou a nota", turma[i].boletim, "e teve", turma[i].porcentageFaltas, "% de faltas", "e foi", regrasAprovacao(turma[i].porcentageFaltas, turma[i].boletim), "Motivo:", motivoFinal(turma[i].faltas, turma[i].boletim))
+    console.log("O aluno", turma[i].nome, "Tirou a nota", turma[i].boletim, "e teve", turma[i].porcentageFaltas, "% de faltas", "e foi", regrasAprovacao(turma[i].porcentageFaltas, turma[i].boletim), "Motivo:", motivoFinal(turma[i].porcentageFaltas, turma[i].boletim))
     }}
 
 media = somanotas / qntAlunos
