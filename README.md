@@ -1,23 +1,32 @@
 # 📊 Sistema de Notas em JavaScript
 
-Projeto simples desenvolvido para praticar lógica de programação com JavaScript.
+Projeto desenvolvido para praticar lógica de programação com JavaScript e evoluído aos poucos durante o **Desafio JavaScript — 30 Dias**.
 
-O sistema permite que o usuário escolha **quantos alunos existem na turma**, registra as notas, calcula a soma e a média da turma e informa o resultado de cada aluno.
+## 🚀 Versão atual — V4
 
-## 🚀 Funcionalidades
+Esta é a **quarta versão** do projeto.
+
+O sistema permite escolher quantos alunos existem na turma, cadastrar nome, nota e faltas, calcular a porcentagem de faltas, a soma e a média das notas e informar a situação final de cada aluno.
+
+## ✅ Funcionalidades
 
 - Permite escolher a quantidade de alunos com `prompt()`
-- Cadastra as notas usando um loop `while`
-- Armazena as notas em um array
-- Exibe a nota e o resultado de cada aluno
+- Cadastra nome, nota e quantidade de faltas de cada aluno
+- Usa um loop `while` para cadastrar a turma
+- Armazena cada aluno como um objeto dentro do array `turma`
+- Calcula a porcentagem de faltas com base em 200 dias de aula
 - Calcula a soma geral das notas
 - Calcula a média da turma
-- Usa uma função para retornar se o aluno foi aprovado ou reprovado
-- Possui uma função preparada para uma futura regra de aprovação considerando nota e faltas
+- Percorre todos os alunos com `for`
+- Informa se o aluno está **Aprovado**, em **Recuperação** ou **Reprovado**
+- Considera o limite de 25% de faltas na regra de aprovação
+- Exibe o motivo do resultado final com a função `motivoFinal()`
+- Mostra os resultados no console do navegador
 
 ## 🧠 Conceitos praticados
 
 - Arrays
+- Objetos
 - `while`
 - `for`
 - Funções e parâmetros
@@ -29,6 +38,8 @@ O sistema permite que o usuário escolha **quantos alunos existem na turma**, re
 - `.push()`
 - Contadores e acumuladores
 - Cálculo de média
+- Cálculo de porcentagem
+- Acesso a propriedades de objetos
 
 ## 🛠️ Tecnologias
 
@@ -39,8 +50,8 @@ O sistema permite que o usuário escolha **quantos alunos existem na turma**, re
 
 1. Abra o arquivo `index.html` no navegador.
 2. Informe quantos alunos existem na turma.
-3. Digite a nota de cada aluno.
-4. Abra o console do navegador para visualizar os resultados, a soma das notas e a média da turma.
+3. Digite o nome, a nota e a quantidade de faltas de cada aluno.
+4. Abra o console do navegador para visualizar os alunos, resultados, motivos, soma das notas e média da turma.
 
 ## 📁 Estrutura
 
@@ -51,11 +62,9 @@ sistema-de-notas-js/
 └── README.md
 ```
 
-## 📚 Origem do projeto
+## 📚 Evolução do projeto
 
-Este projeto nasceu durante meu **Desafio JavaScript — 30 Dias** e está sendo evoluído aos poucos conforme avanço nos estudos.
-
-A primeira versão trabalhava com uma quantidade fixa de alunos. Nesta versão, a quantidade passou a ser escolhida pelo usuário e o projeto começou a usar funções para separar regras de aprovação da lógica principal.
+O projeto nasceu como um exercício simples de boletim e foi sendo ampliado conforme novos conceitos foram estudados. Na **V4**, o sistema já trabalha com uma turma formada por objetos, cadastro de nomes, notas e faltas, porcentagem de frequência e funções separadas para definir a situação e explicar o motivo do resultado.
 
 ---
 
